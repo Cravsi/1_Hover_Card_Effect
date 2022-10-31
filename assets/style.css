@@ -1,0 +1,57 @@
+:root {
+    --border: #00008b;
+    --background-color: rgb(5,10,24);
+
+    /* gradient colours */
+    --grad1: #FF595E;
+    --grad2: #FFCA3A;
+    --grad3: #8ac926;
+    --grad4: #1982C4;
+    --grad5: #6a4c93;
+}
+
+div {
+    display: block;
+}
+
+body {
+    background-color: var(--background-color);
+    display: grid;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    place-items: center;
+}
+
+.card {
+    aspect-ratio: 1/1.6;
+    border: 0.5vmin solid var(--border);
+    width: 50vmin;
+    position: relative;
+    cursor: pointer;    
+}
+
+.card:before:hover {
+    background-position: 100% 100%;
+}
+
+.card:before {
+    background: linear-gradient(
+        130deg,
+        var(--grad1) 20%,
+        var(--grad2) 41.75%,
+        var(--grad3) 64.25%,
+        var(--grad4) 83.625%,
+        var(--grad5) 100%
+    );
+    background-position: 0% 0%;
+    background-size: 300% 300%;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    transition: background-position 350ms ease, transform 350ms ease;
+}
