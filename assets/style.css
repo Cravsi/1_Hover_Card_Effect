@@ -36,6 +36,14 @@ body {
     background-position: -10% 5%;
 }
 
+.card:hover > .content > .card-text > .card-text-word {
+    transform: translateY(0%);
+    transition: 
+        opacity 0ms,
+        transform 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    opacity: 1;
+}
+
 .card:before {
     background: linear-gradient(
         130deg,
@@ -88,4 +96,14 @@ body {
     font-size: 4vmin;
     margin-top: 2vmin;
  }
+
+ .card-text-word {
+    display: inline-block;
+    position: relative;
+    margin: 0vmin 0.3vmin;
+    transform: translateY(40%);
+    transition: none;
+    opacity: 0;
+ }
+
 

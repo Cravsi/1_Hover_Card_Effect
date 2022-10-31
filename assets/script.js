@@ -4,7 +4,8 @@ const createWord = (text, index) => {
     const word = document.createElement("span");
     word.innerHTML = `${text} `;
     word.classList.add("card-text-word");
-
+    word.style.transitionDelay = `${index * 40}ms`;
+    
     return word;
 }
 
