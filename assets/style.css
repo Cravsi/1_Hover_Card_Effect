@@ -32,6 +32,10 @@ body {
     transform: scale(1.05, 1.03);
 }
 
+.card:hover > .content {
+    background-position: -10% 5%;
+}
+
 .card:before {
     background: linear-gradient(
         130deg,
@@ -53,3 +57,17 @@ body {
     transition: background-position 350ms ease, transform 350ms ease;
 }
 
+ .content {
+    background-image: radial-gradient(
+        rgba(200,200,200,0.2) 8%,
+        transparent 9%
+    );
+    background-size: 8vmin 8vmin;
+    background-position: 0% 0%;
+    height: calc(100% - 10vmin);
+    width: calc(100% - 10vmin);
+    position: relative;
+    padding: 5vmin;
+    z-index: 2;
+    transition: background-position 350ms ease;
+ }
