@@ -10,10 +10,6 @@
     --grad5: #6a4c93;
 }
 
-div {
-    display: block;
-}
-
 body {
     background-color: var(--background-color);
     display: grid;
@@ -26,13 +22,14 @@ body {
 .card {
     aspect-ratio: 1/1.6;
     border: 0.5vmin solid var(--border);
-    width: 50vmin;
+    width: 56vmin;
     position: relative;
     cursor: pointer;    
 }
 
-.card:before:hover {
+.card:hover:before {
     background-position: 100% 100%;
+    transform: scale(1.05, 1.03);
 }
 
 .card:before {
@@ -55,3 +52,4 @@ body {
     z-index: 1;
     transition: background-position 350ms ease, transform 350ms ease;
 }
+
