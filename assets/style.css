@@ -62,7 +62,7 @@ body {
     position: absolute;
     left: 0px;
     z-index: 1;
-    transition: background-position 350ms ease, transform 350ms ease;
+    transition: background-position 550ms ease, transform 350ms ease;
 }
 
  .content {
@@ -77,7 +77,7 @@ body {
     position: relative;
     padding: 5vmin; 
     z-index: 2;
-    transition: background-position 350ms ease;
+    transition: background-position 550ms ease;
  }
 
  .card-title,
